@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/main_startRecording"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/record_icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ListView
+        android:id="@+id/main_audioList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_startRecording"
+        >
+    </ListView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_toStartOf="@+id/main_startRecording"
+        android:src="@drawable/word_voice"
+        android:layout_above="@+id/main_audioList" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/main_startRecording"
+        android:src="@drawable/word_memo"
+        android:layout_above="@+id/main_audioList" />
+</RelativeLayout>
